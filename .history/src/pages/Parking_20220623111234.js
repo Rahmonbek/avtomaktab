@@ -33,12 +33,12 @@ function Parking() {
 <Suspense fallback={null}>
   <Car/>
   <Car1/>
-  <Box position={[ -2, 0.05, 0.5]}/>
-  <Box position={[ 0.2, 0.05, 0.4]}/>
-  <Box position={[-0.2, 0.05, -1]}/>
-  <Box position={[ 0.3, 0.05, -0.5]}/>
-  <Box position={[-0.1, 0.05,  0.2]}/>
-  <Box position={[ 0.3, 0.05, 0.1]}/>
+  <Box position={[ 0.1, 0, 0.5]}/>
+  <Box position={[ 0.2, 0, 0.4]}/>
+  <Box position={[-0.2, 0, 0.3]}/>
+  <Box position={[ 0.3, 0, -0.5]}/>
+  <Box position={[-0.1, 0,  0.2]}/>
+  <Box position={[ 0.3, 0, 0.1]}/>
   </Suspense>
       </Physics>
 

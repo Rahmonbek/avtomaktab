@@ -25,7 +25,7 @@ export const Car=()=> {
         }
         if (event.key === 'd') {
           event.preventDefault();
-        
+         console.log(rotation)
           if(rotation[1]<-3.15){
           setRotation([0,3.15,0])
 
@@ -36,14 +36,9 @@ export const Car=()=> {
     
         }
         if (event.key === 'w') {
-            console.log(position)
-            if(position[2]<=-0.08 && position[2]>=-0.09 ){
-            setPosition([0, 0, -0.08])
-            }else{
-                setPosition([0,0,position[2]-0.02])
-            }
+            
           event.preventDefault();
-         
+          setPosition([0,0,position[2]-0.02])
     
         }
         if (event.key === 's') {
@@ -65,10 +60,13 @@ export const Car=()=> {
   
  
   return (
-
-  
+    <>
+  <Suspense fallback={null}>
  
 <Car1 position={position}  rotation={rotation}/>
-  
+
+  </Suspense>
+    
+    </>
   )
 }

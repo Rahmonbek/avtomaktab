@@ -37,7 +37,7 @@ export const Car=()=> {
         }
         if (event.key === 'w') {
             console.log(position)
-            if(position[2]<=-0.08 && position[2]>=-0.09 ){
+            if(position[2]<=-0.08 && position[2]>=-0.08 ){
             setPosition([0, 0, -0.08])
             }else{
                 setPosition([0,0,position[2]-0.02])
@@ -65,10 +65,13 @@ export const Car=()=> {
   
  
   return (
-
-  
+    <>
+  <Suspense fallback={null}>
  
 <Car1 position={position}  rotation={rotation}/>
-  
+
+  </Suspense>
+    
+    </>
   )
 }

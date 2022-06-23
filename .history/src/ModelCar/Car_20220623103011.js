@@ -14,7 +14,7 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF('/car/scene.gltf')
   return (
     <group ref={group} {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]} scale={0.06}>
+      <group rotation={[-Math.PI / 2, 0, 0]} scale={0.01}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[0, 0.47, 3.12]} rotation={[-2.83, 0, Math.PI]} scale={[1, 0.96, 1]}>
             <mesh geometry={nodes.Object_4.geometry} material={nodes.Object_4.material} />

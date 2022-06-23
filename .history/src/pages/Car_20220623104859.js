@@ -65,10 +65,13 @@ export const Car=()=> {
   
  
   return (
-
+    <>
   
  
 <Car1 position={position}  rotation={rotation}/>
-  
+
+  </Suspense>
+    
+    </>
   )
 }

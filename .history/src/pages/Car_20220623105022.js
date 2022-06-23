@@ -70,5 +70,6 @@ export const Car=()=> {
  
 <Car1 position={position}  rotation={rotation}/>
   
+    </>
   )
 }

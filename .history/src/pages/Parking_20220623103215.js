@@ -6,9 +6,8 @@ import {MapControls, OrbitControls} from '@react-three/drei'
 
 import {Road} from './Road';
 import { Car } from "./Car";
-import { Suspense, useEffect } from "react";
+import { useEffect } from "react";
 import { Car1 } from "./Car1";
-import Box from "./Box";
 
 
 function Parking() {
@@ -30,19 +29,10 @@ function Parking() {
   
    
     {/* <Road/> */}
-<Suspense fallback={null}>
   <Car/>
-  <Car1/>
-  <Box position={[ -2, 0.05, 0.5]}/>
-  <Box position={[ 0.2, 0.05, 0.4]}/>
-  <Box position={[-0.2, 0.05, -1]}/>
-  <Box position={[ 0.3, 0.05, -0.5]}/>
-  <Box position={[-0.1, 0.05,  0.2]}/>
-  <Box position={[ 0.3, 0.05, 0.1]}/>
-  </Suspense>
-      </Physics>
 
- 
+  
+      </Physics>
     </Canvas> 
 
     </div>

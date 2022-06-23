@@ -6,18 +6,20 @@ import {MapControls, OrbitControls} from '@react-three/drei'
 
 import {Road} from './Road';
 import { Car } from "./Car";
-import { Suspense, useEffect } from "react";
-import { Car1 } from "./Car1";
-import Box from "./Box";
+import { useEffect } from "react";
 
 
 function Parking() {
 
-
+useEffect(()=>{
+setInterval(()=>{
+    console.log(window)
+},1000)
+},[])
   return (
     <div className="App">
 
-    <Canvas camera={{position:[1,1,1], zoom:1.3}}>
+    <Canvas camera={{position:[0,0,0], zoom:1}}>
 
       <OrbitControls/>
       {/* <MapControls/> */}
@@ -30,19 +32,9 @@ function Parking() {
   
    
     {/* <Road/> */}
-<Suspense fallback={null}>
   <Car/>
-  <Car1/>
-  <Box position={[ -2, 0.05, 0.5]}/>
-  <Box position={[ 0.2, 0.05, 0.4]}/>
-  <Box position={[-0.2, 0.05, -1]}/>
-  <Box position={[ 0.3, 0.05, -0.5]}/>
-  <Box position={[-0.1, 0.05,  0.2]}/>
-  <Box position={[ 0.3, 0.05, 0.1]}/>
-  </Suspense>
+  
       </Physics>
-
- 
     </Canvas> 
 
     </div>
