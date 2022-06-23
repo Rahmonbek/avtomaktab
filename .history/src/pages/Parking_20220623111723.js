@@ -33,7 +33,8 @@ function Parking() {
 <Suspense fallback={null}>
   <Car/>
   <Car1/>
-  <Box/>
+  
+  <Box position={[ -2, 0.05, 0.5]}/>
   </Suspense>
       </Physics>
 

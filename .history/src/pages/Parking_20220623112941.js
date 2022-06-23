@@ -20,7 +20,7 @@ function Parking() {
     <Canvas camera={{position:[1,1,1], zoom:1.3}}>
 
       <OrbitControls/>
-      {/* <MapControls/> */}
+      <MapControls/>
       <Physics>
    <color attach="background" args={["lightblue"]}/>
    <hemisphereLight intensity={0.35}/>

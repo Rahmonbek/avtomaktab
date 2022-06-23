@@ -9,12 +9,12 @@ const [po, setPo]=useState(1)
 
   const box=useRef()
 const [ref1] =useBox(()=>({
-  mass:0,
+  mass:1,
  ...props
 }))
 
   var item=[]
-   for(let i=0; i<=60; i++){
+   for(let i=0; i<=30; i++){
     console.log([Math.random()*(4)-2, 0.05,Math.random()*(3)-1])
 item.push(<mesh receiveShadow castShadow
     ref={ref1}

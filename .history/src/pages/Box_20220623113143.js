@@ -18,7 +18,7 @@ const [ref1] =useBox(()=>({
     console.log([Math.random()*(4)-2, 0.05,Math.random()*(3)-1])
 item.push(<mesh receiveShadow castShadow
     ref={ref1}
-    position={[Math.random()*(4)-2, 0.05,Math.random()*(3)-1]}
+    position={[Math.random()*(4)-2, 0.05,Math.random()*(4)-1]}
     scale={[0.05,0.05,0.05]}
     onClick={()=>{setPo(po*-1)}}>
    <boxBufferGeometry/>

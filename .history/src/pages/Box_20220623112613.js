@@ -9,7 +9,7 @@ const [po, setPo]=useState(1)
 
   const box=useRef()
 const [ref1] =useBox(()=>({
-  mass:0,
+  mass:1,
  ...props
 }))
 

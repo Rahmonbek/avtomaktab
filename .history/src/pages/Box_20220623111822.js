@@ -14,18 +14,21 @@ const [ref1] =useBox(()=>({
 }))
 
   var item=[]
-   for(let i=0; i<=60; i++){
-    console.log([Math.random()*(4)-2, 0.05,Math.random()*(3)-1])
-item.push(<mesh receiveShadow castShadow
-    ref={ref1}
-    position={[Math.random()*(4)-2, 0.05,Math.random()*(3)-1]}
-    scale={[0.05,0.05,0.05]}
-    onClick={()=>{setPo(po*-1)}}>
-   <boxBufferGeometry/>
+   for(let i=0; i<=30; i++){
 
-   <meshStandardMaterial color="gold"/>
-  
- </mesh>)
    }
-    return (item)
+    return (
+ 
+        <mesh receiveShadow castShadow
+         ref={ref1}
+         scale={[0.05,0.05,0.05]}
+         onClick={()=>{setPo(po*-1)}}>
+        <boxBufferGeometry/>
+
+        <meshStandardMaterial color="gold"/>
+       
+      </mesh>
+      
+ 
+  )
 }
