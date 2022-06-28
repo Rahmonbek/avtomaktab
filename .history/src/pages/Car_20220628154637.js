@@ -69,34 +69,7 @@ export default function Car(props) {
          }
          if (event.key === 's') {
            event.preventDefault();
-           if(rotation[1]>=0 && rotation[1]<Math.PI/2){
-            setPosition([position[0]-Math.sin(rotation[1]),0,position[2]-Math.cos(rotation[1])])
-           }
-          
-           if(rotation[1]<Math.PI && rotation[1]>=Math.PI/2){
-            setPosition([position[0]-Math.sin(rotation[1]),0,position[2]-Math.cos(rotation[1])])
-           }
-           if(rotation[1]>=Math.PI && rotation[1]<3*Math.PI/2){
-            setPosition([position[0]-Math.sin(rotation[1]),0,position[2]-Math.cos(rotation[1])])
-           }
-           if(rotation[1]>=3*Math.PI/2){
-            setPosition([position[0]-Math.sin(rotation[1]),0,position[2]-Math.cos(rotation[1])])
-           }
-///
-           if(rotation[1]<=0 && rotation[1]>-Math.PI/2){
-            setPosition([position[0]-Math.sin(rotation[1]),0,position[2]-Math.cos(rotation[1])])
-           }
-          
-           if(rotation[1]>-Math.PI && rotation[1]<=-Math.PI/2){
-            setPosition([position[0]-Math.sin(rotation[1]),0,position[2]-Math.cos(rotation[1])])
-           }
-           if(rotation[1]<=-Math.PI && rotation[1]>-3*Math.PI/2){
-            setPosition([position[0]-Math.sin(rotation[1]),0,position[2]-Math.cos(rotation[1])])
-           }
-           if(rotation[1]<=-3*Math.PI/2){
-            setPosition([position[0]-Math.sin(rotation[1]),0,position[2]-Math.cos(rotation[1])])
-           }
-          
+           setPosition([0,0,position[2]+Math.sin(rotation[1])])
      
          }
    console.log(rotation, position)

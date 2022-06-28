@@ -50,7 +50,7 @@ export default function Box() {
     return (
     <Suspense>
 <mesh receiveShadow castShadow
-        ref={box}>
+        ref={ref1}>
     <boxGeometry />
     <meshStandardMaterial color="red"/>
 </mesh>
