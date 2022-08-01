@@ -19,7 +19,7 @@ export default function Dashboard() {
           OrbitControlsRef.current.update()
          
         }
-    
+        console.log(OrbitControlsRef.current)
        
 })
 

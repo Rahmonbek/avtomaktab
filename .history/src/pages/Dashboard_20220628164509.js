@@ -19,7 +19,6 @@ export default function Dashboard() {
           OrbitControlsRef.current.update()
          
         }
-    
        
 })
 
@@ -35,7 +34,7 @@ item.push(<Heart position={[Math.random() * (0.2) - 0.1,20,Math.random() * (0.2)
     
         <Suspense fallback={null}>
         
-        <OrbitControls ref={OrbitControlsRef} minPolarAngle={(Math.PI/180)*60} minZoom={12} maxPolarAngle={(Math.PI/180)*80}/>
+        <OrbitControls ref={OrbitControlsRef} minPolarAngle={(Math.PI/180)*60} maxPolarAngle={(Math.PI/180)*80}/>
         <PerspectiveCamera makeDefault position={[10,10,20]}/>
         <color attach="background" args={["black"]}/>
       
