@@ -2116,13 +2116,14 @@
     three "0.122.0"
     use-error-boundary "2.0.6"
 
-"@react-three/postprocessing@^2.3.3":
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/@react-three/postprocessing/-/postprocessing-2.3.3.tgz#002afec5ba9852f68be56f028e515b50bcf38aa4"
-  integrity sha512-XgS0TbMafw7oPqkR5fHD9pZ1f5f/qHePdmyOhHdaZ2uTz1XpbFqZAhc7JNYTBN7SiM+xDIZVvX7/202QM9I4zw==
+"@react-three/postprocessing@^2.5.5":
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/@react-three/postprocessing/-/postprocessing-2.5.5.tgz#0cc09ad36f537a4769d8d62ef3227460ec56cca3"
+  integrity sha512-dgFuEEksYgjpZzRPZtoc4/+TxmZV4ImRDzPDfgy1vIPPxpkc2ZSCKJnp5qoOA7aYUbfX0TKTd8CFwT/u4D7wdw==
   dependencies:
-    postprocessing "^6.26.4"
+    postprocessing "^6.28.4"
     react-merge-refs "^1.1.0"
+    screen-space-reflections "^2.1.0"
     three-stdlib "^2.8.11"
 
 "@react-three/rapier@^0.3.0":
@@ -8668,10 +8669,10 @@ postcss@^8.3.5, postcss@^8.4.4, postcss@^8.4.5, postcss@^8.4.6:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-postprocessing@^6.26.4:
-  version "6.28.1"
-  resolved "https://registry.yarnpkg.com/postprocessing/-/postprocessing-6.28.1.tgz#b201e6d9c9e1e2af4213a3b81af57ec599f5ed8d"
-  integrity sha512-3KwA5k9IwdB0bpyJ/jK1KnXAk1BJYV1jnywGXJnQXg5trSNVRUq0Gkas2GDIpo+6ThCbwb20NmF6WQOaeyk1Og==
+postprocessing@^6.28.4:
+  version "6.28.4"
+  resolved "https://registry.yarnpkg.com/postprocessing/-/postprocessing-6.28.4.tgz#03dc2b5c546ef26bdd963af1ea8f75c933e88e34"
+  integrity sha512-xVw7wT9H4s/f/AWS+u3FssIZ1iMY632zweCHqcNZ1ydFChCWeHcWOpEPx0dQz2DMIUlZclFW9WmwMJQxESI+cQ==
 
 potpack@^1.0.1:
   version "1.0.2"
@@ -9921,6 +9922,11 @@ schema-utils@^4.0.0:
     ajv "^8.8.0"
     ajv-formats "^2.1.1"
     ajv-keywords "^5.0.0"
+
+screen-space-reflections@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/screen-space-reflections/-/screen-space-reflections-2.1.1.tgz#e6ca2f0af64d997ccd94737fe7d3adce0fdaa0b1"
+  integrity sha512-UwBaTb6Ss/8EfhDHEdybPhMbHXmtchOcpHHTa5guFFzjj1f0998twZRr/svOJaA/Nyi44VL2Cqf3xGhdu3hC2w==
 
 scroll-into-view-if-needed@^2.2.25:
   version "2.2.29"
