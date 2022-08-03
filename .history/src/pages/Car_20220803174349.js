@@ -116,7 +116,13 @@ export default function Car(props) {
 
     return (
       
-      
+      <Suspense fallback={null}>
+        
+      <OrbitControls ref={OrbitControlsRef} minPolarAngle={(Math.PI/180)*60} minZoom={12} maxPolarAngle={(Math.PI/180)*80}/>
+      <PerspectiveCamera makeDefault position={[10,10,20]}/>
+      <color attach="background" args={["black"]}/>
+    
+      <ambientLight args={["white", 0.25]} />
       <Physics>
       <RigidBody>
 <mesh ref={controlsRef} receiveShadow castShadow>
@@ -126,6 +132,5 @@ export default function Car(props) {
      
   </RigidBody>
   </Physics>
-
   )
 }

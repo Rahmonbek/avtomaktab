@@ -126,6 +126,6 @@ export default function Car(props) {
      
   </RigidBody>
   </Physics>
-
+  </Suspense>
   )
 }

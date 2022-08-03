@@ -115,8 +115,10 @@ export default function Car(props) {
   
 
     return (
-      
-      
+     
+      <color attach="background" args={["black"]}/>
+    
+      <ambientLight args={["white", 0.25]} />
       <Physics>
       <RigidBody>
 <mesh ref={controlsRef} receiveShadow castShadow>
@@ -126,6 +128,6 @@ export default function Car(props) {
      
   </RigidBody>
   </Physics>
-
+  </Suspense>
   )
 }
