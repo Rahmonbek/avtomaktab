@@ -1,0 +1,10 @@
+$('.pages_stu').append(`<div class="pages_item first ${page==1?"dis":''}" onclick=""><</div>
+            <div class="pages_item ${page==1?"active":''}" onclick="">1</div>
+            <div class="pages_item ${page==2?"active":''}" onclick="">2</div>
+            <div class="pages_item ${page==3?"active":''}" onclick="">3</div>
+            <div class="pages_item ${page==4?"active":''}" onclick="">4</div>
+            <div class="pages_item ${page==5?"active":''}" onclick="">5</div>
+            <div class="pages_item dis">...</div>
+            <div class="pages_item">${max_page}</div>
+            <div class="pages_item last">></div>
+            `)

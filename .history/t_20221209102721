@@ -1,0 +1,5 @@
+
+<div class="pages_item ${page==max_page-1?"active":''}" onclick="setPage(max_page-1)">${max_page-1}</div>
+<div class="pages_item ${page==max_page-1?"active":''}" onclick="setPage(max_page-1)">${max_page-1}</div>
+<div class="pages_item ${page==max_page-1?"active":''}" onclick="setPage(max_page-1)">${max_page-1}</div>
+<div class="pages_item ${page==max_page-1?"active":''}" onclick="setPage(max_page-1)">${max_page-1}</div>
